@@ -6,9 +6,9 @@ FROM student; -- display everything of the table named 'student'
 -- =====================================
 -- | student_id | name     | major      |
 -- =====================================
--- | 1          | Jack     |  Biology   |
+-- | 1          | Jack     | Biology    |
 -- -------------------------------------
--- | 2          |  Pat     | Physics    |
+-- | 2          | Pat      | Physics    |
 -- -------------------------------------
 -- | 3          | Andrew   | Chemistry  |
 -- -------------------------------------
