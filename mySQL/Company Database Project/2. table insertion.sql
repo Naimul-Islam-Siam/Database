@@ -17,7 +17,7 @@ insert into employee values(101, 'Jan', 'Levinson', '1961-05-11', 'F', 110000, 1
 -- Scranton Branch
 insert into employee values(102, 'Michael', 'Scott', '1964-03-15', 'M', 75000, 100, null);
 
-insert into branch values(2, 'Scranton', 102, 1992-04-06);
+insert into branch values(2, 'Scranton', 102, '1992-04-06');
 
 update employee
 set branch_id = 2
