@@ -1,5 +1,6 @@
 Given the following database schema perform some operations
-    Schema:
+   
+   Schema:
     
         Customer(cust_id [integer], cust_name [string])
         
