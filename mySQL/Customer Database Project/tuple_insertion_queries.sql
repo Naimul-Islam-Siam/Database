@@ -1,0 +1,42 @@
+insert into Customer values (1001, "Shegufa Rob");
+insert into Customer values (1002, "Nasif Raihan");
+insert into Customer values (1003, "Hasibur Rahman");
+insert into Customer values (1004, "Munstashir Al Islam");
+insert into Customer values (1005, "Samiul Islam");
+insert into Customer values (1006, "Rocky Ahmed");
+insert into Customer values (1007, "Yamin Haque");
+insert into Customer values (1008, "MD Al Siam");
+insert into Customer values (1009, "Mustafizur Rahman");
+insert into Customer values (1010, "Mehedi Hasan");
+
+insert into Item values (1, "Jackson RR3", 100000);
+insert into Item values (2, "Jackson JS22", 28000);
+insert into Item values (3, "Jackson JS32", 36000);
+insert into Item values (4, "Kiesel", 130000);
+insert into Item values (5, "Nikon CM44", 70000);
+insert into Item values (6, "Canon Powershot", 15000);
+insert into Item values (7, "Sony Experia 1", 89000);
+insert into Item values (8, "OnePlus 7 pro", 68000);
+insert into Item values (9, "Asus Zenbook", 60000);
+insert into Item values (10, "Macbook Pro", 200000);
+
+insert into Sale values (101, "2017-08-19", 1);
+insert into Sale values (102, "2018-05-29", 3);
+insert into Sale values (103, "2018-06-23", 4);
+insert into Sale values (104, "2017-07-21", 2);
+insert into Sale values (105, "2019-08-22", 1);
+insert into Sale values (106, "2018-08-11", 4);
+insert into Sale values (107, "2017-09-10", 5);
+insert into Sale values (108, "2019-06-09", 2);
+insert into Sale values (109, "2019-01-10", 3);
+insert into Sale values (110, "2018-03-09", 1);
+
+insert into Details values (1001, 1, 101);
+insert into Details values (1001, 2, 110);
+insert into Details values (1003, 5, 102);
+insert into Details values (1004, 6, 105);
+insert into Details values (1007, 10, 107);
+insert into Details values (1006, 8, 103);
+insert into Details values (1007, 7, 104);
+insert into Details values (1009, 3, 108);
+insert into Details values (1002, 4, 109);
