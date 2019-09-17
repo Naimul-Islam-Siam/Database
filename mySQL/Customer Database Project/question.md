@@ -1,7 +1,9 @@
 Given the following database schema perform some operations
     Schema:
         Customer(cust_id [integer], cust_name [string])
+        
         Item(item_id [integer], item_name [string], price [integer])
+        
         Sale(bill_no [integer], bill_date [date], qty_sold [integer])
 
     Operations:
