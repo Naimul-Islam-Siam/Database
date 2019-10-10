@@ -8,6 +8,19 @@ h1 {
 	text-align: center;
 }
 
+.warning_message {
+	text-align: center;
+	color: red;
+	animation: warn 1s linear 3;
+	overflow: hidden;
+}
+
+.heading_secondary {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #009879;
+}
+
 .form_container {
 	margin: 0 auto;
 	width: 1000px;
@@ -81,4 +94,18 @@ th {
 	font-size: 24px;
 	text-transform: uppercase;
 	padding: 12px 15px;
+}
+
+@keyframes warn {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
