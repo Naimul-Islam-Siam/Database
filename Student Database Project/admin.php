@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
@@ -18,72 +19,137 @@
 <body>
     <h1 class="heading_admin">Admin Field</h1>
 
-    <div class="form_container">
-        <h2 class="heading_secondary">Search:</h2>
-        <form action="includes/adminsearch.php" method="post">
-            <div class="input_container">
-                <input type="text" name="student_name" id="text_input" placeholder= "Search by name">
-                <input type="number" name="student_id" id="number_input" placeholder= "Search by ID">
-                <select name="department" id="department">
-                    <option value="">Choose Department</option>
-                    <option value="eee">EEE</option>
-                    <option value="cse">CSE</option>
-                    <option value="ece">ECE</option>
-                    <option value="ce">CE</option>
-                    <option value="me">ME</option>
-                </select>
-                <select name="series" id="series">
-                    <option value="">Choose Series</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                </select>
-            </div>
-            
-            <div class="btn_container">
-                <button type= "submit" name="search">Search</button>
-            </div>
-        </form>
+    <div>
+        <div class="icon__container icon__search">
+            <h2 class="icon__label">Search Here</h2>
+            <i class="icon ion-md-search icon__cust"></i>
+        </div>
 
-        <h2 class="heading_secondary">Insert:</h2>
-        <form action="includes/admininsert.php" method="post">
-            <div class="input_container">
-                <input type="text" name="student_name" id="text_input" placeholder= "Insert Name" required>
-                <input type="number" name="student_id" id="number_input" placeholder= "Insert ID" required>
-                <select name="department" id="department" required>
-                    <option value="">Insert Department</option>
-                    <option value="eee">EEE</option>
-                    <option value="cse">CSE</option>
-                    <option value="ece">ECE</option>
-                    <option value="ce">CE</option>
-                    <option value="me">ME</option>
-                </select>
-                <select name="series" id="series" required>
-                    <option value="">Insert Series</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                </select>
-            </div>
+        <div class="icon__container icon__insert">
+            <h2 class="icon__label">Insert Here</h2>
+            <i class="icon ion-md-add icon__cust"></i>
+        </div>
 
-            <div class="btn_container">
-                <button type= "submit" name="insert">Insert</button>
-            </div>
-        </form>
+        <div class="icon__container icon__delete">
+            <h2 class="icon__label">Delete Here</h2>
+            <i class="icon ion-md-trash icon__cust"></i>
+        </div>
+    </div>
+    
+    <div class="popup popup__search">
+        <div class="form__container">
+            <h2 class="form__heading">Search Here</h2>
+            <i class="icon ion-md-close icon__close icon__close-search"></i>
+            <form action="includes/adminsearch.php" method="post" class="form">
+                <div class="form__group">
+                    <input type="text" name="student_name" class="form__input" id="name" placeholder="Student Name">
+                    <label for="student_name" class="form__label">Student Name</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="number" name="student_id" class="form__input" id="student_id" placeholder="Student ID">
+                    <label for="student_id" class="form__label">Student ID</label>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__select-container">
+                        <select name="department" id="department" class="form__select">
+                            <option value="">Choose Department</option>
+                            <option value="eee">EEE</option>
+                            <option value="cse">CSE</option>
+                            <option value="ece">ECE</option>
+                            <option value="ce">CE</option>
+                            <option value="me">ME</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__select-container">
+                        <select name="series" id="series" class="form__select">
+                            <option value="">Choose Series</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <button name="search" class="form__submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup popup__insert">
+        <div class="form__container">
+            <h2 class="form__heading">Insert Here</h2>
+            <i class="icon ion-md-close icon__close icon__close-insert"></i>
+            <form action="includes/admininsert.php" method="post" class="form">
+                <div class="form__group">
+                    <input type="text" name="student_name" class="form__input" id="name" placeholder="Student Name" required>
+                    <label for="student_name" class="form__label">Student Name</label>
+                </div>
+
+                <div class="form__group">
+                    <input type="number" name="student_id" class="form__input" id="student_id" placeholder="Student ID" required>
+                    <label for="student_id" class="form__label">Student ID</label>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__select-container">
+                        <select name="department" id="department" class="form__select" required>
+                            <option value="">Choose Department</option>
+                            <option value="eee">EEE</option>
+                            <option value="cse">CSE</option>
+                            <option value="ece">ECE</option>
+                            <option value="ce">CE</option>
+                            <option value="me">ME</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__select-container">
+                        <select name="series" id="series" class="form__select" required>
+                            <option value="">Choose Series</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <button name="insert" class="form__submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
         
-        <h2 class="heading_secondary">Delete:</h2>
-        <form action="includes/admindelete.php" method="post">
-            <div class="input_container">
-                <input type="text" name="student_name" id="text_input" placeholder= "Delete Name">
-                <input type="number" name="student_id" id="number_input" placeholder= "Delete ID" required>
-            </div>
+    <div class="popup popup__delete">
+        <div class="form__container" id="form__container-delete">
+            <h2 class="form__heading">Delete Here</h2>
+            <i class="icon ion-md-close icon__close icon__close-delete"></i>
+            <form action="includes/admindelete.php" method="post" class="form">
+                <div class="form__group">
+                    <input type="text" name="student_name" class="form__input" id="name" placeholder="Student Name">
+                    <label for="student_name" class="form__label">Student Name</label>
+                </div>
 
-            <div class="btn_container">
-                <button type= "submit" name="delete">Delete</button>
-            </div>
-        </form>
+                <div class="form__group">
+                    <input type="number" name="student_id" class="form__input" id="student_id" placeholder="Student ID" required>
+                    <label for="student_id" class="form__label">Student ID</label>
+                </div>
+
+                <div class="form__group">
+                    <button name="delete" class="form__submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <h1 class="heading_student">Student Database</h1>
@@ -114,5 +180,7 @@
             else echo "no result";
         ?>
     </table>
+
+    <script src="main.js"></script>
 </body>
 </html>
