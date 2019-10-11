@@ -100,7 +100,7 @@ $result=mysqli_query($conn,$sql);
             <div class="form__container">
                 <h2 class="form__heading">Search Here</h2>
                 <i class="icon ion-md-close icon__close icon__close-search"></i>
-                <form action="includes/adminsearch.php" method="post" class="form">
+                <form action="adminsearch.php" method="post" class="form">
                     <div class="form__group">
                         <input type="text" name="student_name" class="form__input" id="name" placeholder="Student Name">
                         <label for="student_name" class="form__label">Student Name</label>
@@ -147,7 +147,7 @@ $result=mysqli_query($conn,$sql);
             <div class="form__container">
                 <h2 class="form__heading">Insert Here</h2>
                 <i class="icon ion-md-close icon__close icon__close-insert"></i>
-                <form action="includes/admininsert.php" method="post" class="form">
+                <form action="admininsert.php" method="post" class="form">
                     <div class="form__group">
                         <input type="text" name="student_name" class="form__input" id="name" placeholder="Student Name" required>
                         <label for="student_name" class="form__label">Student Name</label>
@@ -194,7 +194,7 @@ $result=mysqli_query($conn,$sql);
             <div class="form__container" id="form__container-delete">
                 <h2 class="form__heading">Delete Here</h2>
                 <i class="icon ion-md-close icon__close icon__close-delete"></i>
-                <form action="includes/admindelete.php" method="post" class="form">
+                <form action="admindelete.php" method="post" class="form">
                     <div class="form__group">
                         <input type="text" name="student_name" class="form__input" id="name" placeholder="Student Name">
                         <label for="student_name" class="form__label">Student Name</label>

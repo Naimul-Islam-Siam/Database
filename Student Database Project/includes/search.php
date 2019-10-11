@@ -148,7 +148,8 @@ if(!empty($student_name) && !empty($department) && !empty($series)) {
 if(empty($student_id) && empty($student_name) && empty($department) && empty($series)) {
     $sql = "SELECT student_id, student_name, department_name, series
             FROM student, department
-            WHERE student.department_id = department.department_id;";
+            WHERE student.department_id = department.department_id
+            ORDER BY student_id;";
 }
 
 $result=mysqli_query($conn,$sql);
