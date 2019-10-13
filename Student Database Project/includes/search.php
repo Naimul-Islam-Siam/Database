@@ -175,11 +175,11 @@ $result=mysqli_query($conn,$sql);
             <i class="icon ion-md-search icon__cust"></i>
         </div>
 
-        <div class="popup">
+        <div class="popup popup__search">
             <div class="form__container">
                 <h2 class="form__heading">Search Here</h2>
                 <i class="icon ion-md-close icon__close"></i>
-                <form action="includes/search.php" method="post" class="form">
+                <form action="search.php" method="post" class="form">
                     <div class="form__group">
                         <input type="text" name="student_name" class="form__input" id="name" placeholder="Student Name">
                         <label for="student_name" class="form__label">Student Name</label>
